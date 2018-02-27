@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alexander Chekrzhov](https://up.htmlacademy.ru/htmlcss/20/user/652929).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Распономарев](https://up.htmlacademy.ru/htmlcss/20/user/64492).
 
 ---
 
