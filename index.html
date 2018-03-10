@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="header-navigation">
-        <a class="main-header-logo" href="https://htmlacademy.ru">
+        <a class="main-header-logo" href="index.html">
           <img src="img/headerlogo.png" alt="Логотип Седона" width="138" height="70">
         </a>
         <ul class="site-navigation">
@@ -94,9 +94,19 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p><b>Заинтересовались?</b></p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button>Поиск гостиницы в Седоне</button>
+        <button class="btn">Поиск гостиницы в Седоне</button>
         <div class="map"><img src="img/map.jpg" alt="карта" width="1280" height="747"></div>
-        <!-- Здесь будет форма -->
+        <form class="search-form-hotels" action="https://echo.htmlacademy.ru" method="get">
+          <label for="check-in-date">Дата заезда</label>
+          <input type="date" id="check-in-date" name="check-in-date">
+          <label for="check-out-date">Дата выезда</label>
+          <input type="date" id="check-out-date" name="check-out-date">
+          <label for="adult">Взрослые</label>
+          <input type="number" id="adult" name="adult" value="2" min="0" step="1">
+          <label for="child">Дети</label>
+          <input type="number" id="child" name="child" value="0" min="0" step="1">
+          <button class="btn search-form-btn" type="submit">Найти</button>
+        </form>
       </section>
     </main>
 
@@ -104,9 +114,9 @@
         <p class="footer-hashtag">#visitsedona</p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="twitter" width="46" height="48"></a></li>
-            <li><a class="social-button" href="#"><img src="img/facebook.svg" alt="facebook" width="46" height="48"></a></li>
-            <li><a class="social-button" href="#"><img src="img/youtube.svg" alt="youtube" width="46" height="48"></a></li>
+            <li><a class="social-btn" href="#">twitter<img src="img/twitter.svg" alt="twitter" width="46" height="48"></a></li>
+            <li><a class="social-btn" href="#">facebook<img src="img/facebook.svg" alt="facebook" width="46" height="48"></a></li>
+            <li><a class="social-btn" href="#">youtube<img src="img/youtube.svg" alt="youtube" width="46" height="48"></a></li>
           </ul>
         </div>
         <p class="footer-copyright">

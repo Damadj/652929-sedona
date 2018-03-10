@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="header-navigation">
-        <a class="main-header-logo" href="https://htmlacademy.ru">
+        <a class="main-header-logo" href="index.html">
           <img src="img/headerlogo.png" alt="Логотип Седона" width="138" height="70">
         </a>
         <ul class="site-navigation">
@@ -24,7 +24,46 @@
 
       <section class="hotel-filter">
         <h2 class="visually-hidden">Фильтр поиска отелей</h2>
-        <!-- Здесь будет форма -->
+        <form class="hotel-filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="hotel-filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li class="hotel-filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="hotel-filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="Wi-fi" id="filter-wifi">
+                <label for="filter-wifi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="hotel-filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="Hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="hotel-filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="Motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="hotel-filter-option">
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="Apartments" id="filter-aps" checked>
+                <label for="filter-aps">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <label for="priceperday">Стоимость в сутки (P): от 0 до 3000</label>
+          <p class="hotel-filter-price">от 0 до 3000</p>
+          <input class="visually-hidden filter-range" type="range" id="priceperday" name="priceperday" min="0" max="3000" step="10">
+          <button class="btn filter-form-btn" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="hotel-results">
@@ -34,8 +73,8 @@
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По рейтингу</a></li>
-          <li><a href="#"><img src="img/icon-up-dir.svg" alt="up" width="11" height="10"></a></li>
-          <li><a href="#"><img src="img/icon-down-dir.svg" alt="down" width="11" height="10"></a></li>
+          <li><a href="#">По возрастанию<img src="img/icon-up-dir.svg" alt="up" width="11" height="10"></a></li>
+          <li><a href="#">По убыванию<img src="img/icon-down-dir.svg" alt="down" width="11" height="10"></a></li>
         </ul>
         <ul class="hotel-results-list">
           <li class="hotel results-item">
@@ -86,9 +125,9 @@
       <p class="footer-hashtag">#visitsedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="twitter" width="46" height="48"></a></li>
-          <li><a class="social-button" href="#"><img src="img/facebook.svg" alt="facebook" width="46" height="48"></a></li>
-          <li><a class="social-button" href="#"><img src="img/youtube.svg" alt="youtube" width="46" height="48"></a></li>
+          <li><a class="social-button" href="#">twitter<img src="img/twitter.svg" alt="twitter" width="46" height="48"></a></li>
+          <li><a class="social-button" href="#">facebook<img src="img/facebook.svg" alt="facebook" width="46" height="48"></a></li>
+          <li><a class="social-button" href="#">youtube<img src="img/youtube.svg" alt="youtube" width="46" height="48"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
