@@ -50,6 +50,9 @@ a {
     background-repeat: no-repeat;
     background-position: bottom, center;
 }
+.features {
+    font-weight: normal;
+}
 
 .features-list,
 .feature-item-list {
@@ -65,9 +68,11 @@ a {
     font-size: 21px;
     line-height: 21px;
     color: #000000;
+    font-weight: bold;
 }
 
 .features-head-item {
+    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: #000000;
@@ -80,12 +85,14 @@ a {
 .search-form p {
     text-align: center;
     line-height: 24px;
+    font-weight: normal;
 }
 
 .search-form-head {
     font-size: 30px;
     line-height: 36px;
     color: #000000;
+    font-weight: bold;
 }
 
 .search-form form {
@@ -99,6 +106,7 @@ a {
     font-size: 21px;
     line-height: 26px;
     color: #ffffff;
+    font-weight: bold;
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
@@ -149,10 +157,15 @@ a {
 
 }
 
+.main-footer {
+    font-weight: normal;
+}
+
 .footer-hashtag {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
+    font-weight: bold;
 }
 
 .footer-social {
@@ -231,6 +244,7 @@ a {
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
+    font-weight: normal;
     background-color: transparent;
     border: 2px solid #ffffff;
     width: 141px;
@@ -259,6 +273,10 @@ a {
     font-weight: bold;
 }
 
+.hotel-results {
+    font-weight: normal;
+}
+
 .hotel-results h2,
 .hotel-results h3 {
     font-size: 21px;
@@ -269,13 +287,13 @@ a {
 .hotel-sorting li {
     font-size: 12px;
     line-height: 18px;
-    font-weight: bold
+    font-weight: normal;
 }
 
 .sorting {
     font-size: 12px;
     line-height: 18px;
-    font-weight: bold;
+    font-weight: normal;
     color: #000000;
 }
 
