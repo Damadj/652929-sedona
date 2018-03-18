@@ -154,7 +154,11 @@ a {
 .search-form input:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5
+}
 
+input::placeholder {
+    color: #000000;
+    text-transform: uppercase;
 }
 
 .main-footer {
