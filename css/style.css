@@ -46,9 +46,9 @@ a {
 }
 
 .main-background {
-    background-image: url("../img/sedona-mountains.jpg");
+    background-image: url("../img/sedona-mountains-shape.png"), url("../img/sedona-mountains.jpg");
     background-repeat: no-repeat;
-
+    background-position: bottom, center;
 }
 
 .features-list,
@@ -175,6 +175,23 @@ a {
     background-color: #5596be;
 }
 
+.social-btn svg {
+    fill: #ffffff;
+}
+
+.social-btn:active svg {
+    fill: #88b6d0;
+}
+
+.main-header-logo:hover svg {
+    fill: #81b3d2;
+}
+
+.main-header-logo:active svg {
+    fill: #cacaca;
+}
+
+
 .footer-copyright {
     font-size: 14px;
     line-height: 26px;
@@ -275,7 +292,23 @@ a {
     text-decoration: none;
 }
 
-.hotel-sorting a:hover {
+.hotel-sorting svg {
+    fill: #cacaca;
+}
+
+.hotel-sorting-current svg {
+    fill: #81b3d2;
+}
+
+.updown:hover svg {
+    fill: #000000;
+}
+
+.updown:active svg {
+    fill: #81b3d2;
+}
+
+.hotel-results a:hover {
     color: #81b3d2;
 }
 
@@ -290,11 +323,20 @@ a {
     color: #666666;
 }
 
+.hotel-results-name a:hover {
+    color: #81b3d2;
+}
+
+.hotel-results-name a:active {
+    color: #cacaca;
+}
+
 .hotel-results-item .btn-info {
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
     background-color: #81b3d2;
+    padding: 8px 17px 7px 17px;
 }
 
 .hotel-results-item .btn-order {
@@ -302,10 +344,12 @@ a {
     line-height: 21px;
     background-color: #766357;
     color: #ffffff;
+    padding: 8px 17px 7px 17px;
 }
 
 .hotel-results-item .btn-info:hover {
     background-color: #669ec1;
+    color: #ffffff;
 }
 
 .hotel-results-item .btn-info:active {
@@ -315,6 +359,7 @@ a {
 
 .hotel-results-item .btn-order:hover {
     background-color: #604e44;
+    color: #ffffff;
 }
 
 .hotel-results-item .btn-order:active {
