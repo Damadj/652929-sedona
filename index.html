@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -29,8 +32,8 @@
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="features-head features-head-item"><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+        <p class="features-head">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="features-list">
           <li class="feature-item">
             <div class="features-background">
@@ -42,25 +45,21 @@
           <li>
             <div><img src="img/realcity.jpg" alt="город" width="800" height="256"></div>
           </li>
-        </ul>
-        <ul class="feature-item-list">
           <li class="feature-item-inside">
             <p><img src="img/house.svg" alt="жилье" width="74" height="70"></p>
-            <h4>Жилье</h4>
+            <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="feature-item-inside">
             <p><img src="img/food.svg" alt="еда" width="74" height="70"></p>
-            <h4>Еда</h4>
+            <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="feature-item-inside">
             <p><img src="img/souvenir.svg" alt="сувениры" width="74" height="70"></p>
-            <h4>Сувениры</h4>
+            <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
-        </ul>
-        <ul>
           <li>
             <div><img src="img/devil.jpg" alt="мост дьявола" width="800" height="256"></div>
           </li>
@@ -92,7 +91,7 @@
 
       <section class="search-form">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p><b>Заинтересовались?</b></p>
+        <p class="search-form-head"><b>Заинтересовались?</b></p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="btn">Поиск гостиницы в Седоне</button>
         <div class="map"><img src="img/map.jpg" alt="карта" width="1280" height="747"></div>
@@ -114,9 +113,9 @@
         <p class="footer-hashtag">#visitsedona</p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-btn" href="#">twitter<img src="img/twitter.svg" alt="twitter" width="46" height="48"></a></li>
-            <li><a class="social-btn" href="#">facebook<img src="img/facebook.svg" alt="facebook" width="46" height="48"></a></li>
-            <li><a class="social-btn" href="#">youtube<img src="img/youtube.svg" alt="youtube" width="46" height="48"></a></li>
+            <li><a class="btn social-btn" href="#"><img src="img/twitter.svg" alt="twitter" width="46" height="48"></a></li>
+            <li><a class="btn social-btn" href="#"><img src="img/facebook.svg" alt="facebook" width="46" height="48"></a></li>
+            <li><a class="btn social-btn" href="#"><img src="img/youtube.svg" alt="youtube" width="46" height="48"></a></li>
           </ul>
         </div>
         <p class="footer-copyright">
