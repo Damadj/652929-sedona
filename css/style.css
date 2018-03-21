@@ -421,9 +421,19 @@ input::placeholder {
     box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
+.site-navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
 .main-background img {
     margin-left: 371px;
     margin-top: 76px;
+}
+
+.features-title {
+    padding-left: 355px;
+    padding-right: 355px;
 }
 
 .features-list {
@@ -486,9 +496,29 @@ input::placeholder {
 }
 
 .search-form-hotels {
-    display: block;
-    position: absolute;
-    bottom: -400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 458px;
+    bottom: -500px;
+    left: auto;
+    padding: 55px;
+}
+
+/* Временно */
+.search-form-item,
+.search-form-hotels {
+    outline: 1px solid black;
+}
+
+.search-form-item:first-child {
+    margin-right: 21px;
+}
+
+.search-form-item:nth-child(2),
+.search-form-item:nth-child(4) {
+
 }
 
 .main-footer {
@@ -497,16 +527,9 @@ input::placeholder {
 
 .main-footer .container {
     display: flex;
+    justify-content: space-around;
 }
 
-.footer-hashtag {
-    margin-right: 256px;
-    margin-left: 132px;
-}
-
-.footer-social {
-    margin-right: 228px;
-}
 
 
 /* Страница отелей сетки */
