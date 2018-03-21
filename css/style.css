@@ -15,11 +15,18 @@ a {
 }
 
 .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.body-wrapper {
+    background-color: #ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .header-navigation {
@@ -48,8 +55,10 @@ a {
 .main-background {
     background-image: url("../img/sedona-mountains-shape.png"), url("../img/sedona-mountains.jpg");
     background-repeat: no-repeat;
-    background-position: bottom, center;
+    background-position: bottom, 0 -56px;
+    height: 508px;
 }
+
 .features {
     font-weight: normal;
 }
@@ -64,11 +73,14 @@ a {
     text-align: center;
 }
 
+
+
 .features h3 {
     font-size: 21px;
     line-height: 21px;
     color: #000000;
     font-weight: bold;
+    text-align: center;
 }
 
 .features-head-item {
@@ -78,8 +90,9 @@ a {
     color: #000000;
 }
 
-.features-background {
-    background-color: #81b3d2;
+
+.search-form {
+    background-color: #ffffff;
 }
 
 .search-form p {
@@ -216,6 +229,7 @@ input::placeholder {
 }
 
 
+/* Страница отелей */
 
 
 .site-navigation-current a {
@@ -387,4 +401,129 @@ input::placeholder {
 .hotel-results-item .btn-order:active {
     background-color: #503e34;
     color: #857871;
+}
+
+
+/* Главная страница сетки */
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.body-wrapper {
+    background-color: #ffffff;
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+}
+
+.main-background img {
+    margin-left: 371px;
+    margin-top: 76px;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-item {
+    width: 400px;
+}
+
+.features-list p {
+    text-align: center;
+    padding-left: 49px;
+    padding-right: 49px;
+}
+
+.features-img {
+    width: 800px;
+    height: 256px;
+}
+
+.features-list li:first-child,
+.features-list li:nth-child(7) {
+    background-color: #81b3d2;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+.features-list li:nth-child(8),
+.features-list li:nth-child(9),
+.features-list li:nth-child(10) {
+    padding-top: 50px;
+    padding-bottom: 63px;
+    background-color: #f2f2f2;
+}
+
+.features-list li:first-child h3,
+.features-list li:nth-child(7) h3{
+    color: #ffffff;
+}
+
+.features-list li:nth-child(3),
+.features-list li:nth-child(4),
+.features-list li:nth-child(5) {
+    background-color: #ffffff;
+    padding-top: 56px;
+    padding-bottom: 85px;
+}
+
+.search-hotel-btn {
+    margin-left: 316px;
+}
+
+.map {
+    display: block;
+    position: relative;
+}
+
+.search-form-hotels {
+    display: block;
+    position: absolute;
+    bottom: -400px;
+}
+
+.main-footer {
+    margin-top: 36px;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-hashtag {
+    margin-right: 256px;
+    margin-left: 132px;
+}
+
+.footer-social {
+    margin-right: 228px;
+}
+
+
+/* Страница отелей сетки */
+
+
+.hotel-results-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hotel-results-item {
+    border-top: 1px solid #e5e5e5;
+    padding-left: 72px;
+}
+
+.hotel-results-item:last-child {
+    border-bottom: 1px solid #e5e5e5;
 }
