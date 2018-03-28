@@ -134,6 +134,7 @@ input[type="radio"].visually-hidden {
     border: none;
     background-color: #766357;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -176,7 +177,7 @@ input[type="radio"].visually-hidden {
 
 .search-form input:focus {
     background-color: #ffffff;
-    border: 2px solid #e5e5e5
+    outline: 2px solid #e5e5e5
 }
 
 input::-webkit-input-placeholder {
@@ -671,17 +672,96 @@ input::placeholder {
     width: 50%;
 }
 
-.search-form-item input[type="text"] {
+.search-form-item .in-out-date {
     width: 346px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            padding-right: 38px;
 }
 
-.search-form-item input[type="number"] {
+.search-form-item {
+    position: relative;
+}
+
+.calendar-in {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    cursor: pointer;
+}
+
+.calendar-out {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    cursor: pointer;
+}
+
+.calendar-in svg,
+.calendar-out svg {
+    fill: #cacaca;
+}
+
+.calendar-in:hover svg,
+.calendar-out:hover svg {
+    fill: #000000;
+}
+
+.calendar-in:active svg,
+.calendar-out:active svg {
+    fill: #81b3d2;
+}
+
+.search-form-item .amount {
     width: 114px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: center;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.search-form-minus {
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    bottom: 17px;
+    right: 90px;
+    background-color: #a9a9a9;
+    cursor: pointer;
+}
+
+.search-form-plus {
+  position: absolute;
+  width: 11px;
+  height: 3px;
+  bottom: 17px;
+  right: 15px;
+  background-color: #a9a9a9;
+  cursor: pointer;
+}
+
+.search-form-plus::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 11px;
+  top: -4px;
+  right: 4px;
+  background-color: #a9a9a9;
+  cursor: pointer;
+}
+
+.search-form-minus:hover,
+.search-form-plus:hover,
+.search-form-plus:hover::after {
+    background-color: #000000;
+}
+
+.search-form-minus:active,
+.search-form-plus:active,
+.search-form-plus:active::after {
+    background-color: #81b3d2;
 }
 
 .map {
@@ -776,100 +856,151 @@ input::placeholder {
     margin: 0;
 }
 
+
+.checkbox-label {
+    position: relative;
+}
+
+.checkbox-label input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    background-image: url("../img/filter-checkbox-off.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 23px;
+    top: -2px;
+    left: -40px;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-indicator {
+    position: absolute;
+    background-image: url("../img/filter-checkbox-on.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 23px;
+    top: -2px;
+    left: -40px;
+}
+
+.checkbox-label input[type="checkbox"]:disabled + .checkbox-indicator {
+    position: absolute;
+    background-image: url("../img/filter-checkbox-off-disabled.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 23px;
+    top: -2px;
+    left: -40px;
+}
+
+.checkbox-label input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+    position: absolute;
+    background-image: url("../img/filter-checkbox-on-disabled.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 23px;
+    top: -2px;
+    left: -40px;
+}
+
+.checkbox-label input[type="checkbox"]:focus + .checkbox-indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-range {
     width: 330px;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
 }
 
 .price-controls {
-  position: relative;
-  height: 36px;
-  font-size: 0;
-  margin-bottom: 20px;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+    position: relative;
+    height: 36px;
+    font-size: 0;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 22px;
-  background: #ffffff;
-  -webkit-transform: translate(-50%, -50%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-  cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+    width: 90px;
+    padding-left: 65px;
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
-  color: inherit;
-  background: none;
-  border: none;
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    background: none;
+    border: none;
 }
 
 .range-controls {
-  position: relative;
-  margin-bottom: 32px;
+    position: relative;
+    margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
-  background: #ffffff;
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+    border: 9px solid #ffffff;
 }
 
 .range-toggle-min {
-  left: 0;
+    left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+    left: 80%;
 }
 
 .sorting-wrapper {
