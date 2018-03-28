@@ -644,6 +644,8 @@ input::placeholder {
 .search-form-item label,
 .search-form-item input {
     display: inline-block;
+    vertical-align: middle;
+
 }
 
 .search-form-item:nth-child(1) label,
@@ -660,6 +662,7 @@ input::placeholder {
 
 .search-form-item input {
     padding: 7px 13px;
+    line-height: 1;
 }
 
 .search-form-item:first-child,
@@ -670,7 +673,8 @@ input::placeholder {
 .search-form-item:nth-child(3),
 .search-form-item:nth-child(4) {
     width: 50%;
-}
+    vertical-align: middle;
+  }
 
 .search-form-item .in-out-date {
     width: 346px;
@@ -685,15 +689,15 @@ input::placeholder {
 
 .calendar-in {
     position: absolute;
-    top: 8px;
-    right: 9px;
+    top: 15%;
+    transform: translate(-50%);
     cursor: pointer;
 }
 
 .calendar-out {
     position: absolute;
-    top: 8px;
-    right: 9px;
+    top: 15%;
+    transform: translate(-50%);
     cursor: pointer;
 }
 
@@ -725,31 +729,31 @@ input::placeholder {
     position: absolute;
     width: 12px;
     height: 3px;
-    bottom: 17px;
-    right: 90px;
+    top: 50%;
+    left: 125px;
     background-color: #a9a9a9;
     cursor: pointer;
 }
 
 .search-form-plus {
-  position: absolute;
-  width: 11px;
-  height: 3px;
-  bottom: 17px;
-  right: 15px;
-  background-color: #a9a9a9;
-  cursor: pointer;
+    position: absolute;
+    width: 11px;
+    height: 3px;
+    top: 50%;
+    left: 0;
+    background-color: #a9a9a9;
+    cursor: pointer;
 }
 
 .search-form-plus::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 11px;
-  top: -4px;
-  right: 4px;
-  background-color: #a9a9a9;
-  cursor: pointer;
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    top: -4px;
+    right: 4px;
+    background-color: #a9a9a9;
+    cursor: pointer;
 }
 
 .search-form-minus:hover,
