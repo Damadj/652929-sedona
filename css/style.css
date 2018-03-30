@@ -317,8 +317,8 @@ input::placeholder {
     font-weight: normal;
     background-color: transparent;
     border: 2px solid #ffffff;
-    padding: 6px 35px;
-    margin: 0 auto;
+    padding: 6px 34px;
+    margin: -2px 0 0 85px;
 }
 
 .filter-form-btn:hover,
@@ -361,6 +361,7 @@ input::placeholder {
     color: #000000;
     margin: 0;
     margin-left: 49px;
+    margin-top: 6px;
 }
 
 .hotel-sorting a {
@@ -422,7 +423,7 @@ input::placeholder {
     line-height: 21px;
     color: #ffffff;
     background-color: #81b3d2;
-    padding: 4px 15px 3px 15px;
+    padding: 4px 16px 3px 15px;
 }
 
 .hotel-results-item .btn-order {
@@ -430,7 +431,7 @@ input::placeholder {
     line-height: 21px;
     background-color: #766357;
     color: #ffffff;
-    padding: 4px 17px 3px 17px;
+    padding: 4px 16px 3px 17px;
 }
 
 .hotel-results-item .btn-info:hover {
@@ -489,10 +490,6 @@ input::placeholder {
     text-align: right;
 }
 
-.site-navigation li:first-child,
-.site-navigation li:nth-child(3) {
-    margin-right: 28px;
-}
 
 .site-navigation li:nth-child(2) {
     margin-right: auto;
@@ -500,6 +497,7 @@ input::placeholder {
 
 .site-navigation li:nth-child(3) {
     margin-left: auto;
+    padding-right: 5px;
 }
 
 .main-header-logo-container {
@@ -514,12 +512,12 @@ input::placeholder {
 
 .features-title {
     margin: 0 354px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
     margin-top: 62px;
 }
 
 .features-title .features-head:first-child {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .features-list {
@@ -562,13 +560,25 @@ input::placeholder {
 .features-list li:nth-child(7) {
     background-color: #81b3d2;
     color: #ffffff;
-    padding-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.features-background p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.features-background p:nth-child(2) {
+    padding-bottom: 20px;
+    padding-top: 5px;
 }
 
 .features-list li:nth-child(8),
 .features-list li:nth-child(9),
 .features-list li:nth-child(10) {
-    padding-top: 35px;
+    padding-top: 25px;
     padding-bottom: 46px;
     background-color: #f2f2f2;
 }
@@ -583,7 +593,13 @@ input::placeholder {
 .features-list li:nth-child(5) {
     background-color: #ffffff;
     padding-top: 47px;
-    padding-bottom: 74px;
+    padding-bottom: 69px;
+}
+
+.feature-item:nth-child(3) h3,
+.feature-item:nth-child(4) h3,
+.feature-item:nth-child(5) h3 {
+    padding-bottom: 5px;
 }
 
 .feature-item:nth-child(8) p,
@@ -591,6 +607,7 @@ input::placeholder {
 .feature-item:nth-child(10) p {
     padding-left: 65px;
     padding-right: 65px;
+    padding-top: 5px;
 }
 
 .search-form-title {
@@ -602,9 +619,9 @@ input::placeholder {
 .search-hotel-btn {
     margin-left: 316px;
     margin-right: 316px;
-    padding-left: 138px;
-    padding-right: 138px;
-    padding-top: 32px;
+    padding-left: 139px;
+    padding-right: 139px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -661,7 +678,7 @@ input::placeholder {
 }
 
 .search-form-item input {
-    padding: 7px 13px;
+    padding: 9px 9px;
     line-height: 1;
 }
 
@@ -749,7 +766,7 @@ input::placeholder {
     cursor: pointer;
     top: 50%;
     transform: translateY(-50%);
-    right: 13px;
+    right: 12px;
     display: inline-flex;
 }
 
@@ -805,7 +822,23 @@ input::placeholder {
     background-color: rgba(255, 255, 255, 0.9);
     padding-top: 36px;
     padding-bottom: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-top: -120px;
+}
+
+.footer-item:first-child {
+    padding-bottom: 4px;
+    padding-right: 30px;
+}
+
+.footer-item:nth-child(2) {
+    padding-bottom: 2px;
+}
+
+.footer-item:last-child {
+    padding-bottom: 4px;
+    padding-right: 5px;
 }
 
 .inner-footer {
@@ -845,7 +878,7 @@ input::placeholder {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 30px 72px;
+    padding: 28px 72px 32px 72px;
 }
 
 .hotel-filter-form fieldset:first-child {
@@ -853,12 +886,13 @@ input::placeholder {
 }
 
 .hotel-filter-form fieldset:nth-child(2) {
-    margin-right: 322px;
+    margin-right: 319px;
+    margin-left: 3px;
 }
 
 .hotel-filter-form ul {
     margin: 0;
-    margin-top: 28px;
+    margin-top: 25px;
 }
 
 .hotel-filter-option {
@@ -923,10 +957,12 @@ input::placeholder {
 
 .filter-range {
     width: 330px;
+    margin-left: 29px;
 }
 
 .filter-range-title {
-    margin-bottom: 9px;
+  margin-top: -2px;
+    margin-bottom: 13px;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -934,8 +970,9 @@ input::placeholder {
 
 .price-controls {
     position: relative;
-    height: 36px;
+    height: 32px;
     font-size: 0;
+    margin-top: -3px;
     margin-bottom: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -960,12 +997,17 @@ input::placeholder {
     line-height: 38px;
     vertical-align: top;
     cursor: pointer;
+    margin-top: -3px;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-    width: 90px;
+.price-controls .min-price {
     padding-left: 65px;
+    width: 90px;
+}
+
+.price-controls .max-price {
+    padding-left: 58px;
+    width: 90px;
 }
 
 .price-controls input {
@@ -978,7 +1020,7 @@ input::placeholder {
 
 .range-controls {
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 }
 
 .range-controls .scale {
@@ -1033,6 +1075,7 @@ input::placeholder {
     display: flex;
     padding: 0;
     margin: 0;
+    margin-top: 6px;
     margin-left: 40px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1141,11 +1184,14 @@ input::placeholder {
 }
 
 .hotel-price {
+    position: relative;
     padding-bottom: 5px;
+    min-width: 182px;
 }
 
 .hotel-results-price {
-    padding-left: 35px;
+    position: absolute;
+    right: 0;
 }
 
 .btn-info {
@@ -1153,9 +1199,9 @@ input::placeholder {
 }
 
 .rating {
-    padding-left: 16px;
-    padding-right: 14px;
-    padding-top: 6px;
-    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     background-color: #f2f2f2;
 }
