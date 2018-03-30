@@ -1186,12 +1186,17 @@ input::placeholder {
 .hotel-price {
     position: relative;
     padding-bottom: 5px;
-    min-width: 182px;
+    width: 182px;
+}
+
+.hotel-price-type {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
 }
 
 .hotel-results-price {
-    position: absolute;
-    right: 0;
+    padding-left: 15px;
 }
 
 .btn-info {
