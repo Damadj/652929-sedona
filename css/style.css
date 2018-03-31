@@ -64,6 +64,7 @@ input[type="radio"].visually-hidden {
 .main-background {
     background-image: url("../img/sedona-mountains-shape.png"), url("../img/sedona-mountains.jpg");
     background-repeat: no-repeat;
+    background-color: #6c6769;
     background-position: bottom, 0 -56px;
     padding-bottom: 74px;
 }
@@ -90,6 +91,8 @@ input[type="radio"].visually-hidden {
     color: #000000;
     font-weight: bold;
     text-align: center;
+    width: 160px;
+    padding-left: 120px;
 }
 
 .features-title p:first-child {
@@ -500,9 +503,15 @@ input::placeholder {
     padding-right: 5px;
 }
 
+.main-header {
+    position: relative;
+    padding-top: 1px;
+}
+
 .main-header-logo-container {
-    margin-left: 531px;
-    margin-bottom: -76px;
+    position: absolute;
+    top: 0;
+    left: 531px;
 }
 
 .main-background img {
@@ -798,6 +807,7 @@ input::placeholder {
 .map {
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
+    background-color: #e9e5dc;
     width: 1200px;
     min-height: 593px;
     background-position: -40px -154px;
@@ -899,8 +909,8 @@ input::placeholder {
     margin-bottom: 23px;
 }
 
-.hotel-filter-option:nth-child(3),
-.hotel-filter-option:nth-child(6) {
+.hotel-filter-option:last-child,
+.hotel-filter-option:last-child {
     margin: 0;
 }
 
