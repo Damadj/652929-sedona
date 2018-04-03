@@ -2,12 +2,15 @@
   var popup = document.querySelector(".search-form-hotels");
   var checkin = popup.querySelector("[name=checkin]");
   var checkout = popup.querySelector("[name=checkout]");
-  var adult = popup.querySelector("[name=adult]");
-  var child = popup.querySelector("[name=child]");
+
+  popup.classList.add("popup-hide");
 
   popup.addEventListener("submit", function (evt) {
-    if (!checkin.value || !checkout.value || !adult.value || !child.value) {
+    if (!checkin.value || !checkout.value) {
     evt.preventDefault();
+    popup.classList.remove("popup-hide");
+    popup.classList.remove("form-error");
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("form-error");
     }
   });
