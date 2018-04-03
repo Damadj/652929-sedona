@@ -8,7 +8,6 @@
   popup.addEventListener("submit", function (evt) {
     if (!checkin.value || !checkout.value) {
     evt.preventDefault();
-    popup.classList.remove("popup-hide");
     popup.classList.remove("form-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("form-error");
